@@ -5,7 +5,7 @@ package main
 
 
 // factored import statement
-// 공식문서에서는 이 방법으로 import하는걸 추천한다
+// 공식문서에서는 이 방법으로 import하는걸 추천합니다.
 import (
   "fmt"
   "math/rand"
@@ -110,7 +110,7 @@ const a := "wrong"
 ### if문 & if-else
 
 ```
-// 기본적인 if문, 특이한 점으로 소괄호가 없습니다
+// 기본적인 if문, 특이한 점으로 소괄호가 없습니다.
 if a < 10 {
 
 }
