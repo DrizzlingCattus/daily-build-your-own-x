@@ -16,9 +16,11 @@ func main() {
 
   cmd.Env = append(cmd.Env, `PS1=$`)
 
-  cmd.SysProcAttr = &syscall.SysProcAttr{
-    Cloneflags: syscall.CLONE_NEWUTS,
-  }
+  //cmd.SysProcAttr = &syscall.SysProcAttr{
+  //  Cloneflags: syscall.CLONE_NEWUTS,
+  //}
+
+  syscall.Unshare(syscall.CLONE_NEWUTS);
 
   syscall.Sethostname([]byte("hello world"))
 
